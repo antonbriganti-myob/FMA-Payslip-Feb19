@@ -42,7 +42,7 @@ public class Main {
 
 
 		System.out.println("Name: " + fullName);
-		System.out.println("Pay Period: " + startDate.getDayOfMonth() + " " + startDate.getMonth() + " - " + endDate.getDayOfMonth() + " " + endDate.getMonth();
+		System.out.println("Pay Period: " + startDate.getDayOfMonth() + " " + startDate.getMonth() + " - " + endDate.getDayOfMonth() + " " + endDate.getMonth());
 		System.out.println("Gross Income: " + grossIncome);
 		System.out.println("Income Tax: " + incomeTax);
 		System.out.println("Net Income: " + netIncome);
