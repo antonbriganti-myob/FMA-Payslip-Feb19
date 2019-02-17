@@ -41,7 +41,7 @@ public class PayslipGenerator {
     }
 
     private long calculateSuperAmount(long grossIncome, double superRate) {
-        return Math.round(grossIncome * superRate);
+        return Math.round(grossIncome * (superRate/100));
     }
 
 
