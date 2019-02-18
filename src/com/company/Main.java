@@ -1,9 +1,10 @@
 package com.company;
 
-import java.time.MonthDay;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class Main {
 
@@ -18,7 +19,7 @@ public class Main {
 
 
         System.out.println("Name: " + employee.getFullName());
-        System.out.println("Pay Period: " + employee.getPayPeriod());
+        System.out.println("Pay Period: " + employee.getPayPeriod().returnPayPeriodAsString());
         System.out.println("Gross Income: " + payslip.getGrossIncome());
         System.out.println("Income Tax: " + payslip.getIncomeTax());
         System.out.println("Net Income: " + payslip.getNetIncome());
@@ -42,10 +43,7 @@ public class Main {
         String fullName = inputParser.getUserName();
         double annualSalary = inputParser.getAnnualSalary();
         double superRate = inputParser.getSuperRate();
-        MonthDay startDate = inputParser.getPayPeriodStartDate();
-        MonthDay endDate = inputParser.getPayPeriodEndDate();
-        String payPeriod = startDate.getDayOfMonth() + " " + startDate.getMonth() + " - " + endDate.getDayOfMonth() + " " + endDate.getMonth();
-
+        PayPeriod payPeriod = inputParser.getPayPeriod();
 
         return new Employee(fullName, annualSalary, superRate, payPeriod);
     }

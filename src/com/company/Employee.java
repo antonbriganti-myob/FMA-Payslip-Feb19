@@ -4,9 +4,9 @@ public class Employee {
     private String fullName;
     private double annualSalary;
     private double superRate;
-    private String payPeriod;
+    private PayPeriod payPeriod;
 
-    public Employee(String fullName, double annualSalary, double superRate, String payPeriod) {
+    public Employee(String fullName, double annualSalary, double superRate, PayPeriod payPeriod) {
         this.fullName = fullName;
         this.annualSalary = annualSalary;
         this.superRate = superRate;
@@ -37,11 +37,11 @@ public class Employee {
         this.superRate = superRate;
     }
 
-    public String getPayPeriod() {
+    public PayPeriod getPayPeriod() {
         return payPeriod;
     }
 
-    public void setPayPeriod(String payPeriod) {
+    public void setPayPeriod(PayPeriod payPeriod) {
         this.payPeriod = payPeriod;
     }
 }

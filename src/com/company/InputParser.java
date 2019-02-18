@@ -95,6 +95,7 @@ public class InputParser {
         boolean validEndDateEntered = false;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d MMMM", Locale.ENGLISH);
 
+
         while(!validEndDateEntered){
             System.out.println("Enter your payment end date: ");
             try{
@@ -110,6 +111,21 @@ public class InputParser {
         }
 
         return date;
+    }
+
+    PayPeriod getPayPeriod(){
+        MonthDay start = MonthDay.now();
+        MonthDay end = MonthDay.now();
+        boolean validPayPeriodEntered = false;
+
+        while(!validPayPeriodEntered){
+            start = getPayPeriodStartDate();
+            end = getPayPeriodEndDate();
+            validPayPeriodEntered = validator.validatePayPeriodDateRange(start, end);
+        }
+
+        return new PayPeriod(start, end);
+
     }
 
 

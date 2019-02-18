@@ -56,8 +56,21 @@ public class InputValidator {
         }
     }
 
-
     private boolean checkIfEndOfMonth(MonthDay date) {
         return (date.getDayOfMonth() == date.getMonth().minLength());
+    }
+
+    boolean validatePayPeriodDateRange(MonthDay start, MonthDay end) {
+        if(checkIfSameMonth(start, end)){
+            return true;
+        }
+        else{
+            System.out.println("Pay period start and end dates must be the same month. Please try again");
+            return false;
+        }
+    }
+
+    private boolean checkIfSameMonth(MonthDay start, MonthDay end) {
+        return (start.getMonthValue() == end.getMonthValue());
     }
 }

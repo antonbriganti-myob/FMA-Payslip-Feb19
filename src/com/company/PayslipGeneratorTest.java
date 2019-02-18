@@ -1,7 +1,10 @@
 package com.company;
 
+import java.time.MonthDay;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Locale;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -19,7 +22,13 @@ class PayslipGeneratorTest {
         TaxBracket t5 = new TaxBracket(180000, Integer.MAX_VALUE, 54232, 0.45);
         ArrayList<TaxBracket> brackets =  new ArrayList<>(Arrays.asList(t1,t2,t3,t4,t5));
 
-        employee = new Employee("John Jones", 60050, 9, "01 MARCH - 31 MARCH");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d MMMM", Locale.ENGLISH);
+        MonthDay start = MonthDay.parse("1 March", formatter);
+        MonthDay end = MonthDay.parse("31 March", formatter);
+
+        PayPeriod payPeriod = new PayPeriod(start, end);
+
+        employee = new Employee("John Jones", 60050, 9, payPeriod);
         generator = new PayslipGenerator(brackets);
     }
 
@@ -56,91 +65,91 @@ class PayslipGeneratorTest {
 //  income tax tests
     @org.junit.jupiter.api.Test
     void bracket1MinValueTest() {
-        employee = new Employee("John Jones", 0, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(0);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 0);
     }
 
     @org.junit.jupiter.api.Test
     void bracket1MaxValueTest() {
-        employee = new Employee("John Jones", 18200, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(18200);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 0);
     }
 
     @org.junit.jupiter.api.Test
     void bracket1MidValueTest() {
-        employee = new Employee("John Jones", 9100, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(9100);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 0);
     }
 
     @org.junit.jupiter.api.Test
     void bracket2MinValueTest() {
-        employee = new Employee("John Jones", 18201, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(18201);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 0);
     }
 
     @org.junit.jupiter.api.Test
     void bracket2MaxValueTest() {
-        employee = new Employee("John Jones", 37000, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(37000);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 298);
     }
 
     @org.junit.jupiter.api.Test
     void bracket2MidValueTest() {
-        employee = new Employee("John Jones", 27600, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(27600);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 149);
     }
 
     @org.junit.jupiter.api.Test
     void bracket3MinValueTest() {
-        employee = new Employee("John Jones", 37001, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(37001);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 298);
     }
 
     @org.junit.jupiter.api.Test
     void bracket3MaxValueTest() {
-        employee = new Employee("John Jones", 87000, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(87000);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 1652);
     }
 
     @org.junit.jupiter.api.Test
     void bracket3MidValueTest() {
-        employee = new Employee("John Jones", 62000.5, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(62000.5);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 975);
     }
 
     @org.junit.jupiter.api.Test
     void bracket4MinValueTest() {
-        employee = new Employee("John Jones", 87001, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(87001);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 1652);
     }
 
     @org.junit.jupiter.api.Test
     void bracket4MaxValueTest() {
-        employee = new Employee("John Jones", 180000, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(180000);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 4519);
     }
 
     @org.junit.jupiter.api.Test
     void bracket4MidValueTest() {
-        employee = new Employee("John Jones", 133500.5, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(133500.5);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 3086);
     }
 
     @org.junit.jupiter.api.Test
     void bracket5ValueTest() {
-        employee = new Employee("John Jones", 180001, 9, "01 MARCH - 31 MARCH");
+        employee.setAnnualSalary(180001);
         var payslip = generator.createPayslip(employee);
         assertEquals(payslip.getIncomeTax(), 4519);
     }

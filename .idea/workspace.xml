@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e443ccbd-4520-46b6-8863-0068c2863614" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/PayslipGeneratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/InputValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/PayPeriod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/InputParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/InputParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/InputValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/InputValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/PayslipGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/PayslipGeneratorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="34" selection-end-column="62" />
+            <state relative-caret-position="394">
+              <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state>
+              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
               <folding>
                 <element signature="e#452#453#0" expanded="true" />
                 <element signature="e#483#484#0" expanded="true" />
@@ -43,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/InputParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1770">
-              <caret line="121" selection-start-line="121" selection-end-line="121" />
+            <state relative-caret-position="222">
+              <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,38 +60,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/InputValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+            <state relative-caret-position="624">
+              <caret line="67" column="79" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Payslip.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/InputValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="220">
+              <caret line="98" column="20" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
               <folding>
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#817#818#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#931#932#0" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-                <element signature="e#1039#1040#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1129#1130#0" expanded="true" />
-                <element signature="e#1165#1166#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1251#1252#0" expanded="true" />
-                <element signature="e#1297#1298#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
+                <element signature="e#925#926#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1132#1133#0" expanded="true" />
+                <element signature="e#1192#1193#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/PayslipGeneratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="144" column="53" selection-start-line="144" selection-start-column="53" selection-end-line="144" selection-end-column="53" />
+            <state relative-caret-position="1593">
+              <caret line="156" column="1" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,9 +128,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -139,22 +140,24 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Employee.java" />
-        <option value="$PROJECT_DIR$/src/com/company/InputParser.java" />
-        <option value="$PROJECT_DIR$/src/com/company/InputValidator.java" />
         <option value="$PROJECT_DIR$/src/com/company/Payslip.java" />
         <option value="$PROJECT_DIR$/src/com/company/PayslipGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/company/TaxBracket.java" />
+        <option value="$PROJECT_DIR$/src/com/company/InputValidator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/InputParser.java" />
+        <option value="$PROJECT_DIR$/src/com/company/PayPeriod.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Employee.java" />
         <option value="$PROJECT_DIR$/src/com/company/PayslipGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/InputValidatorTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="386" />
-    <option name="y" value="-1057" />
-    <option name="width" value="1280" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="17" />
+    <option name="y" value="151" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -188,7 +191,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550466313123" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550527981679" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -215,13 +218,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PayslipGeneratorTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="FMA-Payslip" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InputValidatorTest.validatePayPeriodDateRangeReturnsInvalidOnDifferentMonth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FMA-Payslip" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.InputValidatorTest" />
+      <option name="METHOD_NAME" value="validatePayPeriodDateRangeReturnsInvalidOnDifferentMonth" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -273,28 +292,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PayslipGeneratorTest.createPayslip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FMA-Payslip" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.PayslipGeneratorTest" />
-      <option name="METHOD_NAME" value="createPayslip" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.InputValidatorTest.validatePayPeriodDateRangeReturnsInvalidOnDifferentMonth" />
         <item itemvalue="JUnit.PayslipGeneratorTest" />
         <item itemvalue="JUnit.PayslipGeneratorTest.calculateIncomeTaxCorrectlyCalculates" />
         <item itemvalue="JUnit.PayslipGeneratorTest.calculateGrossIncomeCorrectlyCalculates" />
-        <item itemvalue="JUnit.PayslipGeneratorTest.createPayslip" />
       </list>
     </recent_temporary>
   </component>
@@ -330,22 +334,31 @@
     <history-entry file="PayslipGeneratorTest - 2019.02.18 at 15h 38m 49s.xml">
       <configuration name="PayslipGeneratorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PayslipGeneratorTest - 2019.02.18 at 16h 05m 15s.xml">
+      <configuration name="PayslipGeneratorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PayslipGeneratorTest - 2019.02.19 at 08h 54m 33s.xml">
+      <configuration name="PayslipGeneratorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InputValidatorTest_validatePayPeriodDateRangeReturnsInvalidOnDifferentMonth - 2019.02.19 at 09h 10m 07s.xml">
+      <configuration name="InputValidatorTest.validatePayPeriodDateRangeReturnsInvalidOnDifferentMonth" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="386" y="-1057" width="1280" height="1057" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27544427" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24391988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32953367" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32953367" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45106384" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -364,23 +377,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/InputParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/InputValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/TaxBracket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -417,24 +413,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Employee.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/PayslipGeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+        <state relative-caret-position="1593">
+          <caret line="156" column="1" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
           <folding>
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/InputValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="67" column="79" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="34" selection-end-column="62" />
+        <state relative-caret-position="394">
+          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/InputParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PayPeriod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -445,12 +464,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/PayslipGeneratorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="144" column="53" selection-start-line="144" selection-start-column="53" selection-end-line="144" selection-end-column="53" />
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/InputValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="98" column="20" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
+          <folding>
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="e#1192#1193#0" expanded="true" />
           </folding>
         </state>
       </provider>
