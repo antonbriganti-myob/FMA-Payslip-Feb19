@@ -38,7 +38,7 @@ public class Main {
 
 		long netIncome = grossIncome - incomeTax;
 
-		long superAmount = Math.round(grossIncome * superRate);
+		long superAmount = Math.round(grossIncome * (superRate/100));
 
 
 		System.out.println("Name: " + fullName);
