@@ -33,6 +33,7 @@ public class Main {
 		TaxBracket t4 = new TaxBracket(87001, 180000, 19822, 0.37);
 		TaxBracket t5 = new TaxBracket(180000, Integer.MAX_VALUE, 54232, 0.45);
 		return new ArrayList<>(Arrays.asList(t1,t2,t3,t4,t5));
+
 	}
 
 	private static Employee createEmployee() {
@@ -41,9 +42,10 @@ public class Main {
 		String fullName = inputParser.getUserName();
 		double annualSalary = inputParser.getAnnualSalary();
 		double superRate = inputParser.getSuperRate();
-		MonthDay startDate = inputParser.getPayPeriodStartDay();
-		MonthDay endDate = inputParser.getPayPeriodEndDay();
+		MonthDay startDate = inputParser.getPayPeriodStartDate();
+		MonthDay endDate = inputParser.getPayPeriodEndDate();
 		String payPeriod = startDate.getDayOfMonth() + " " + startDate.getMonth() + " - " + endDate.getDayOfMonth() + " " + endDate.getMonth();
+
 
 		return new Employee(fullName, annualSalary, superRate, payPeriod);
 	}
