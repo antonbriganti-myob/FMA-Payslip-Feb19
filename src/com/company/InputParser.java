@@ -32,14 +32,14 @@ public class InputParser {
         System.out.println("Enter your annual salary: ");
 
         while(!validSalaryEntered){
-           try{
-               String input = scanner.nextLine();
-               annualSalary = Double.valueOf(input);
-               validSalaryEntered = validator.validateAnnualSalary(annualSalary);
+            try{
+                String input = scanner.nextLine();
+                annualSalary = Double.valueOf(input);
+                validSalaryEntered = validator.validateAnnualSalary(annualSalary);
 
-           }
-           catch (NumberFormatException e){
-               System.out.println("Invalid input, please enter salary again: ");
+            }
+            catch (NumberFormatException e){
+                System.out.println("Invalid input, please enter salary again: ");
             }
         }
 
@@ -89,7 +89,7 @@ public class InputParser {
         return date;
     }
 
-    
+
     MonthDay getPayPeriodEndDate() {
         MonthDay date = MonthDay.now();
         boolean validEndDateEntered = false;

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FMA-Payslip-Feb19.iml" filepath="$PROJECT_DIR$/FMA-Payslip-Feb19.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PayslipFeb19/PayslipFeb19.iml" filepath="$PROJECT_DIR$/PayslipFeb19/PayslipFeb19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FMA-Payslip.iml" filepath="$PROJECT_DIR$/FMA-Payslip.iml" />
     </modules>
   </component>
 </project>
