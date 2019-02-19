@@ -1,4 +1,4 @@
-package com.company;
+package company;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -58,14 +58,14 @@ class InputValidatorTest {
     void validatePayPeriodStartReturnsTrueOnStartDateOnValidDate() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d MMMM", Locale.ENGLISH);
         MonthDay date = MonthDay.parse("1 March", formatter);
-        assertTrue(validator.validatePayPeriodEndDate(date));
+        assertTrue(validator.validatePayPeriodStartDate(date));
     }
 
     @Test
-    void validatePayPeriodStatReturnsTrueOnStartDateOnInvalidDate() {
+    void validatePayPeriodStartReturnsFalseOnStartDateOnInvalidDate() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d MMMM", Locale.ENGLISH);
         MonthDay date = MonthDay.parse("21 March", formatter);
-        assertTrue(validator.validatePayPeriodEndDate(date));
+        assertTrue(validator.validatePayPeriodStartDate(date));
     }
 
     @Test
@@ -76,13 +76,12 @@ class InputValidatorTest {
     }
 
     @Test
-    void validatePayPeriodEndReturnsTrueOnStartDateOnInvalidDate() {
+    void validatePayPeriodEndReturnsFalseOnStartDateOnInvalidDate() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d MMMM", Locale.ENGLISH);
         MonthDay date = MonthDay.parse("3 March", formatter);
-        assertTrue(validator.validatePayPeriodEndDate(date));
+        assertFalse(validator.validatePayPeriodEndDate(date));
     }
-
-    //write tests about making sure they're same date
+    
     @Test
     void validatePayPeriodDateRangeReturnsTrueOnSameMonth() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d MMMM", Locale.ENGLISH);

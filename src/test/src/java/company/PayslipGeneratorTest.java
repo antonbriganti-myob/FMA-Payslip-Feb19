@@ -1,4 +1,4 @@
-package com.company;
+package company;
 
 import java.time.MonthDay;
 import java.time.format.DateTimeFormatter;
